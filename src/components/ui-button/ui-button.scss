@@ -1,11 +1,16 @@
 $ui-button--font-size: 16px !default;
 $ui-button--font-weight: 400 !default;
+$ui-button--font-color: #444 !default;
+
+$ui-button--background-color: #efefef !default;
 
 $ui-button--border-radius: 4px !default;
 $ui-button--padding-y: 16px !default;
 $ui-button--padding-x: 32px !default;
 
 $ui-button--loader-size: 15px !default;
+$ui-button--loader-color-start: #42a5f5 !default;
+$ui-button--loader-color-end: #ec407a !default;
 
 $ui-button--box-shadow: -6px -6px 14px rgba(222, 250, 255, 0.1),
 -6px -6px 10px rgba(255, 255, 255, .5),
@@ -30,9 +35,9 @@ inset 2px 2px 4px rgba(0, 0, 0, .15) !default;
 
   button {
     padding: $ui-button--padding-y $ui-button--padding-x;
-    background: #efefef;
+    background: $ui-button--background-color;
     border: none;
-    color: #444;
+    color: $ui-button--font-color;
     font-size: $ui-button--font-size;
     border-radius: $ui-button--border-radius;
     font-weight: $ui-button--font-weight;
@@ -53,7 +58,7 @@ inset 2px 2px 4px rgba(0, 0, 0, .15) !default;
     .loader {
       animation: spin 1s linear infinite;
       border: 3px solid #ddd;
-      border-top: 3px solid #42a5f5;
+      border-top: 3px solid $ui-button--loader-color-start;
       border-radius: 50%;
       height: $ui-button--loader-size;
       width: $ui-button--loader-size;
@@ -62,7 +67,7 @@ inset 2px 2px 4px rgba(0, 0, 0, .15) !default;
 
     @keyframes spin {
       to {
-        border-top-color: #ec407a;
+        border-top-color: $ui-button--loader-color-end;
         transform: rotate(360deg);
       }
     }
