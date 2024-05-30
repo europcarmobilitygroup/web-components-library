@@ -1,0 +1,70 @@
+$ui-button--font-size: 16px !default;
+$ui-button--font-weight: 400 !default;
+
+$ui-button--border-radius: 4px !default;
+$ui-button--padding-y: 16px !default;
+$ui-button--padding-x: 32px !default;
+
+$ui-button--loader-size: 15px !default;
+
+$ui-button--box-shadow: -6px -6px 14px rgba(222, 250, 255, 0.1),
+-6px -6px 10px rgba(255, 255, 255, .5),
+6px 6px 8px rgba(255, 255, 255, .075),
+6px 6px 10px rgba(0, 0, 0, .15) !default;
+
+$ui-button--box-shadow-hover: -6px -6px 14px rgba(222, 250, 255, 0.1),
+-6px -6px 10px rgba(255, 255, 255, .5),
+6px 6px 8px rgba(255, 255, 255, .075),
+6px 6px 10px rgba(0, 0, 0, .15) !default;
+
+$ui-button--box-shadow-active: inset -2px -2px 6px rgba(255, 255, 255, .7),
+inset -2px -2px 4px rgba(255, 255, 255, .5),
+inset 2px 2px 2px rgba(255, 255, 255, .075),
+inset 2px 2px 4px rgba(0, 0, 0, .15) !default;
+
+.Ui-Button {
+  &--invisible {
+    opacity: 0;
+    height: 0;
+  }
+
+  button {
+    padding: $ui-button--padding-y $ui-button--padding-x;
+    background: #efefef;
+    border: none;
+    color: #444;
+    font-size: $ui-button--font-size;
+    border-radius: $ui-button--border-radius;
+    font-weight: $ui-button--font-weight;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    box-shadow: $ui-button--box-shadow;
+
+    &:hover {
+      box-shadow: $ui-button--box-shadow-hover;
+    }
+
+    &:active {
+      box-shadow: $ui-button--box-shadow-active;
+    }
+
+    .loader {
+      animation: spin 1s linear infinite;
+      border: 3px solid #ddd;
+      border-top: 3px solid #42a5f5;
+      border-radius: 50%;
+      height: $ui-button--loader-size;
+      width: $ui-button--loader-size;
+      margin: auto;
+    }
+
+    @keyframes spin {
+      to {
+        border-top-color: #ec407a;
+        transform: rotate(360deg);
+      }
+    }
+  }
+}

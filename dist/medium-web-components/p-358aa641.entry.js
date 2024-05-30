@@ -1,0 +1,1 @@
+import{r as s,h as t,H as i}from"./p-9218419c.js";const o=class{constructor(t){s(this,t),this.label="",this.isLoading=!1,this.isDisabled=!1}render(){return t(i,{class:"Ui-Button"},t("button",null,this.isLoading?t("div",{class:"loader"}):"",t("div",{class:{"Ui-Button--invisible":this.isLoading}}," ",this.label," ")))}};export{o as ui_button}

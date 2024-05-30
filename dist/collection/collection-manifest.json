@@ -1,0 +1,12 @@
+{
+  "entries": [
+    "./components/ui-button/ui-button.js"
+  ],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "2.22.1",
+    "typescriptVersion": "4.9.4"
+  },
+  "collections": [],
+  "bundles": []
+}
