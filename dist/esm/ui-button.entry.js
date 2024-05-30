@@ -5,7 +5,6 @@ const UiButton = class {
     registerInstance(this, hostRef);
     this.label = '';
     this.isLoading = false;
-    this.isDisabled = false;
   }
   render() {
     return (h(Host, { class: 'Ui-Button' }, h("button", null, this.isLoading

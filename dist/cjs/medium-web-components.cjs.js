@@ -17,7 +17,7 @@ const patchBrowser = () => {
 };
 
 patchBrowser().then(options => {
-  return index.bootstrapLazy([["ui-button.cjs",[[0,"ui-button",{"label":[1],"isLoading":[4,"loading"],"isDisabled":[4,"disabled"]}]]]], options);
+  return index.bootstrapLazy([["ui-button.cjs",[[0,"ui-button",{"label":[1],"isLoading":[4,"loading"]}]]]], options);
 });
 
 exports.setNonce = index.setNonce;

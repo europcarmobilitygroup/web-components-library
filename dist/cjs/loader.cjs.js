@@ -14,7 +14,7 @@ const patchEsm = () => {
 const defineCustomElements = (win, options) => {
   if (typeof window === 'undefined') return Promise.resolve();
   return patchEsm().then(() => {
-  return index.bootstrapLazy([["ui-button.cjs",[[0,"ui-button",{"label":[1],"isLoading":[4,"loading"],"isDisabled":[4,"disabled"]}]]]], options);
+  return index.bootstrapLazy([["ui-button.cjs",[[0,"ui-button",{"label":[1],"isLoading":[4,"loading"]}]]]], options);
   });
 };
 

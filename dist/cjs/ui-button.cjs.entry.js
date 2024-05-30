@@ -9,7 +9,6 @@ const UiButton = class {
     index.registerInstance(this, hostRef);
     this.label = '';
     this.isLoading = false;
-    this.isDisabled = false;
   }
   render() {
     return (index.h(index.Host, { class: 'Ui-Button' }, index.h("button", null, this.isLoading

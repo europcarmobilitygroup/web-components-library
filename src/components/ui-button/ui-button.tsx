@@ -19,11 +19,6 @@ export class UiButton {
    */
   @Prop({ attribute: 'loading' }) isLoading = false;
 
-  /**
-   * Disables button's functionalities
-   */
-  @Prop({ attribute: 'disabled' }) isDisabled = false;
-
   render(): HTMLElement {
     return (
       <Host class={'Ui-Button'}>

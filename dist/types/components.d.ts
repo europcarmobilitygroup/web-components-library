@@ -12,10 +12,6 @@ export namespace Components {
      */
     interface UiButton {
         /**
-          * Disables button's functionalities
-         */
-        "isDisabled": boolean;
-        /**
           * Enables the loader loading
          */
         "isLoading": boolean;
@@ -46,10 +42,6 @@ declare namespace LocalJSX {
      * <ui-button />
      */
     interface UiButton {
-        /**
-          * Disables button's functionalities
-         */
-        "isDisabled"?: boolean;
         /**
           * Enables the loader loading
          */

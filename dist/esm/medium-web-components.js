@@ -14,5 +14,5 @@ const patchBrowser = () => {
 };
 
 patchBrowser().then(options => {
-  return bootstrapLazy([["ui-button",[[0,"ui-button",{"label":[1],"isLoading":[4,"loading"],"isDisabled":[4,"disabled"]}]]]], options);
+  return bootstrapLazy([["ui-button",[[0,"ui-button",{"label":[1],"isLoading":[4,"loading"]}]]]], options);
 });

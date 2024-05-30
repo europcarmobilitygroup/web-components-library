@@ -7,7 +7,6 @@ const UiButton$1 = class extends HTMLElement {
     this.__registerHost();
     this.label = '';
     this.isLoading = false;
-    this.isDisabled = false;
   }
   render() {
     return (h(Host, { class: 'Ui-Button' }, h("button", null, this.isLoading
@@ -16,7 +15,7 @@ const UiButton$1 = class extends HTMLElement {
   }
 };
 
-const UiButton = /*@__PURE__*/proxyCustomElement(UiButton$1, [0,"ui-button",{"label":[1],"isLoading":[4,"loading"],"isDisabled":[4,"disabled"]}]);
+const UiButton = /*@__PURE__*/proxyCustomElement(UiButton$1, [0,"ui-button",{"label":[1],"isLoading":[4,"loading"]}]);
 const defineCustomElements = (opts) => {
   if (typeof customElements !== 'undefined') {
     [

@@ -13,6 +13,7 @@ section {
   &-brand-1 {
     $ui-button--font-size: 18px;
     $ui-button--border-radius: 100px;
+    $ui-button--font-color: #090 !default;
 
     @import "./src/components/ui-button/ui-button.scss";
   }

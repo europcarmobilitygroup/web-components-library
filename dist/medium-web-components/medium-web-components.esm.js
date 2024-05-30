@@ -1,1 +1,1 @@
-import{p as a,b as o}from"./p-9218419c.js";export{s as setNonce}from"./p-9218419c.js";(()=>{const s=import.meta.url,o={};return""!==s&&(o.resourcesUrl=new URL(".",s).href),a(o)})().then((s=>o([["p-358aa641",[[0,"ui-button",{label:[1],isLoading:[4,"loading"],isDisabled:[4,"disabled"]}]]]],s)));
+import{p as o,b as t}from"./p-9218419c.js";export{s as setNonce}from"./p-9218419c.js";(()=>{const s=import.meta.url,t={};return""!==s&&(t.resourcesUrl=new URL(".",s).href),o(t)})().then((o=>t([["p-8f6513e0",[[0,"ui-button",{label:[1],isLoading:[4,"loading"]}]]]],o)));

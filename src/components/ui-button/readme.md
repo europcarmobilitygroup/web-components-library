@@ -13,11 +13,10 @@ UiButton web component
 
 ## Properties
 
-| Property     | Attribute  | Description                       | Type      | Default |
-| ------------ | ---------- | --------------------------------- | --------- | ------- |
-| `isDisabled` | `disabled` | Disables button's functionalities | `boolean` | `false` |
-| `isLoading`  | `loading`  | Enables the loader loading        | `boolean` | `false` |
-| `label`      | `label`    | Button label                      | `string`  | `''`    |
+| Property    | Attribute | Description                | Type      | Default |
+| ----------- | --------- | -------------------------- | --------- | ------- |
+| `isLoading` | `loading` | Enables the loader loading | `boolean` | `false` |
+| `label`     | `label`   | Button label               | `string`  | `''`    |
 
 
 ----------------------------------------------

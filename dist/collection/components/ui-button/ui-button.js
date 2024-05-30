@@ -8,7 +8,6 @@ export class UiButton {
   constructor() {
     this.label = '';
     this.isLoading = false;
-    this.isDisabled = false;
   }
   render() {
     return (h(Host, { class: 'Ui-Button' }, h("button", null, this.isLoading
@@ -51,24 +50,6 @@ export class UiButton {
           "text": "Enables the loader loading"
         },
         "attribute": "loading",
-        "reflect": false,
-        "defaultValue": "false"
-      },
-      "isDisabled": {
-        "type": "boolean",
-        "mutable": false,
-        "complexType": {
-          "original": "boolean",
-          "resolved": "boolean",
-          "references": {}
-        },
-        "required": false,
-        "optional": false,
-        "docs": {
-          "tags": [],
-          "text": "Disables button's functionalities"
-        },
-        "attribute": "disabled",
         "reflect": false,
         "defaultValue": "false"
       }

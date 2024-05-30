@@ -5,12 +5,8 @@ import customElements from '../dist/custom-elements/index';
 setCustomElementsManifest(customElements);
 
 export default {
-  title: 'Button',
+  title: 'UiButton',
   argTypes: {
-    disabled: {
-      control: { type: 'boolean' },
-      defaultValue: false,
-    },
     loading: {
       control: { type: 'boolean' },
       defaultValue: false,
@@ -25,7 +21,6 @@ export default {
 export const WebComponent = (argTypes) => html`
   <section>
     <ui-button
-      disabled="${argTypes.disabled}"
       loading="${argTypes.loading}"
       label="${argTypes.label}"
     />
